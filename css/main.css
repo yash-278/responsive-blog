@@ -153,6 +153,8 @@ nav a:focus {
 }
 
 .featured-article {
+  display: flex;
+  flex-direction: column;
   padding-bottom: 1em;
   border-bottom: #707070 2px solid;
   margin-bottom: 2em;
@@ -281,26 +283,6 @@ footer {
     width: 25%;
   }
 
-  .featured-article {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .article-image {
-    order: 0;
-  }
-  .article-info {
-    order: 1;
-  }
-  .article-title {
-    order: 2;
-  }
-  .article-body {
-    order: 3;
-  }
-  .article-read-more {
-    order: 4;
-  }
   .recent-article {
     display: flex;
     flex-direction: row;
