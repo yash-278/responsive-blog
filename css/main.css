@@ -1,0 +1,319 @@
+/* font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+ */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* *=============================================*
+*=============   ATOMIC CSS PROPS   =============*               
+*============================================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* *============================================*
+*===============    HEADER    ==================*
+*==============================================*/
+
+header {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 2em 0;
+  margin-bottom: 2em;
+}
+
+header h1 {
+  font-family: "Lora", serif;
+  font-size: 2rem;
+  color: #143774;
+  font-weight: 400;
+  margin: 0;
+}
+
+header p {
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  color: #1792d2;
+  margin: 0;
+}
+
+/* *==============================================
+*===========      NAVIGATION BAR       ===========
+*================================================*/
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+nav li {
+  /* margin-left: 2em; */
+  margin: 0.5em auto;
+}
+nav a {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #707070;
+  text-decoration: none;
+  padding: 0.25em 0;
+}
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 2px solid #707070;
+}
+.current-page:hover {
+  color: #707070;
+}
+
+/* *=============================================*
+*==========   GLOBAL ARTICLES STYLING  ==========*               
+*============================================= */
+
+.article-title {
+  color: #143774;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.article-body {
+  color: #707070;
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.article-read-more {
+  color: #1792d2;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+}
+
+.article-info {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #707070;
+  margin: 1.5em 0;
+}
+
+/* *=============================================*
+*==============      MAIN BODY      =============*
+*============================================= */
+
+/* *=============================================*
+*=============   FEATURED ARTICLE   =============*
+*============================================= */
+
+.article-body span {
+  font-weight: 700;
+}
+
+.featured-article {
+  padding-bottom: 1em;
+  border-bottom: #707070 2px solid;
+  margin-bottom: 2em;
+}
+
+/* *=============================================*
+*=============   RECENT ARTICLES   =============*
+*============================================= */
+
+.recent-article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.recent-article-main {
+  order: 2;
+}
+
+.recent-article-secondary {
+  order: 1;
+}
+
+.recent-article h2 {
+  margin-top: 0em;
+}
+
+/* *=============================================*
+*=============   SIDEBAR ARTICLES   ============*
+*============================================= */
+
+.sidebar-widget {
+  border: 20px #efefef solid;
+  background: white;
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+.widget-title {
+  font-size: 1rem;
+  margin-bottom: 1em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #143774;
+}
+
+.widget-body {
+  font-family: "Lora", serif;
+  color: #143774;
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px #707070 solid;
+}
+
+.widget-recent-post-title {
+  font-family: "Lora", serif;
+  color: #143774;
+  font-weight: 300;
+  order: 1;
+}
+.widget-image {
+  order: 0;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* *=============================================*
+*==============       FOOTER        ============*
+*============================================= */
+
+footer {
+  background: #143774;
+  color: white;
+  text-align: center;
+  padding: 2em 0;
+}
+
+/* *=============================================*
+*============      ABOUT PAGE        ============*
+*============================================= */
+
+.about-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 3em;
+}
+
+.article-body span {
+  font-weight: 700;
+}
+
+/* *=============================================*
+*=============   MEDIA QUERIES   ==============*               
+*============================================= */
+
+@media (min-width: 780px) {
+  .container-flex {
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav li {
+    margin-left: 2em;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 25%;
+  }
+
+  .featured-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-image {
+    order: 0;
+  }
+  .article-info {
+    order: 1;
+  }
+  .article-title {
+    order: 2;
+  }
+  .article-body {
+    order: 3;
+  }
+  .article-read-more {
+    order: 4;
+  }
+  .recent-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recent-article-main {
+    width: 68%;
+  }
+
+  .recent-article-secondary {
+    width: 30%;
+  }
+
+  .article-image {
+    width: 100%;
+    height: 83%;
+    object-fit: cover;
+  }
+}
