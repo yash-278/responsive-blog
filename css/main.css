@@ -148,6 +148,10 @@ nav a:focus {
   font-weight: 700;
 }
 
+.article-body a {
+  color: #1792d2;
+}
+
 .featured-article {
   padding-bottom: 1em;
   border-bottom: #707070 2px solid;
