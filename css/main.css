@@ -160,6 +160,22 @@ nav a:focus {
   margin-bottom: 2em;
 }
 
+.article-image {
+  order: 0;
+}
+.article-info {
+  order: 1;
+}
+.article-title {
+  order: 2;
+}
+.article-body {
+  order: 3;
+}
+.article-read-more {
+  order: 4;
+}
+
 /* *=============================================*
 *=============   RECENT ARTICLES   =============*
 *============================================= */
